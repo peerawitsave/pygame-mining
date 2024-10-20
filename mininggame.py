@@ -9,7 +9,7 @@ pygame.init()
 WIDTH, HEIGHT = 800, 600
 WHITE = (255, 255, 255)
 FONT = pygame.font.Font(None, 36)
-HOLD_TIME = 2000
+HOLD_TIME = 1500
 SHAKE_OFFSET = 1
 PARTICLE_LIFETIME = 2000
 NUM_PARTICLES = 50
@@ -36,7 +36,7 @@ fixed_prob = FixedRateProbability(initial_success_rate=50, max_failures=1)
 
 MINERALS = ["Gold", "Silver", "Diamond", "Dirt"]
 MINERAL_COLORS = {"Gold": (255, 215, 0), "Silver": (192, 192, 192), "Diamond": (0, 191, 255), "Dirt": (139, 69, 19)}
-mineral_rate = 40
+mineral_rate = 50
 miss_count = 0
 
 
@@ -59,6 +59,8 @@ particles = []
 
 glow_effect_phase = 0
 
+
+# ------------------------------------------------ main_game -------------------------------------------------------------------------------------------------
 
 running = True
 while running:
